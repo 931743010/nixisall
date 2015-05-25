@@ -1,20 +1,29 @@
-*{
-    margin:0;
-    padding:0;
+@charset "utf-8";
+/*公共样式 start*/
+body,div,h1,p,h2,header,ul,li,dl,dt,dd,ol,nav,input,footer{ margin:0; padding:0;}
+body{ color:#000;font-family:Arial, Helvetica, sans-serif;background:#dedede;}
+body,html{ height:100%;width:100%;-webkit-touch-callout: none;-webkit-user-select:none;}
+@media screen and (max-width:479px){
+    body{font-size:10px;-webkit-text-size-adjust: none;}
+    input{font-size:10px;}
 }
-h1{
-    font-size:50px;
-    position:absolute;
-    top:35%;
-    left:39%;
-    color:white;
 }
-h3{
-    position:absolute;
-    top:45%;
-    left:25%;
-    color:white;
+@media screen and (min-width:480px) and (max-width:639px){
+    html{font-size:15px;-webkit-text-size-adjust: none;}
 }
-div{
-    background:black;
+@media screen and (min-width:640px) and (max-width:719px){
+    html{font-size:20px;-webkit-text-size-adjust: none;}
 }
+@media screen and (min-width:720px){
+    html{font-size:22.5px;-webkit-text-size-adjust: none;}
+}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0;font-size:100%; font-weight:normal;}
+ul,li{ list-style:none;}
+html{-webkit-text-size-adjust:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+img{border:none;  vertical-align:middle; width:100%;}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both;}
+.clearfix{ *zoom:1;}
+input{ font-family:Arial, Helvetica, sans-serif;}
+a{ text-decoration:none; color:#fff;}
+a:hover{ text-decoration:none;}

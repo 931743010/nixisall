@@ -8,14 +8,30 @@
     <link rel="stylesheet" href="./css/app/home.css">
 </head>
 <body>
-    <header>
+    <header class='clearfix'>
+        <a href="">
+            <div class="logo">
+                <p class='logoText'>Nix's All</p>
+            </div>
+        </a>
+        <nav>
+            <ul class='clearfix'>
+                <li><a href="javascript:;">Home</a></li>
+                <li><a href="javascript:;">Cloud</a></li>
+                <li><a href="javascript:;">Robert</a></li>
+                <li><a href="javascript:;">Taody</a></li>
+                <li><a href="javascript:;">David</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class='canvasWrap'>
         <div class="text">
             <h1>向着梦想前进</h1>
             <h3>我们还走在奋斗的路上 &nbsp;&nbsp;磨难与汗水一定会有 &nbsp;&nbsp;但我们不能放弃 &nbsp;&nbsp;因为我们生来不凡</h3>
         </div>
         <div id='particles-js'></div>
-    </header>
-        <script>
+    </section>
+    <script>
         var loadConfig = [ null ,'home' ];
     </script>
     <script data-main="js/main" src='js/lib/require.js'></script>

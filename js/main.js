@@ -7,7 +7,5 @@ require.config({
         "home"   : "app/home"
     }
 });
-require(loadConfig,function($,dep){
-    var noop = function(){};
-});
+require(loadConfig);
 
